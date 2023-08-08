@@ -12,7 +12,7 @@ import { registerApplication, start } from "single-spa";
 registerApplication({
   name: "zoom-app",
   app: () => import(/* webpackIgnore: true */ "http://localhost:5173/src/main.js"),
-  activeWhen: ["/zoom-app"],
+  activeWhen: ["/"],
 });
 
 start({
